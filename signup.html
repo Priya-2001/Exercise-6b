@@ -65,17 +65,15 @@ a:active {
 </nav>
 <p><a href="login.html" style="color:pink">Back</a></p>
 <h1><center>Please enter the following details to signup</center></h1><br>
-<form method="get" action="res.html">
+<form method="post" action="res.html">
 <fieldset>
-<h3>
 <div class="head">
 <h2><center>Personal Information</center></h2>
 </div>
 <div class="container">
 <div class="row">
 <div class="col-md-12">
-First Name:
-<span style="width:100px"></span>
+<h3>First Name:</h3>
 <select id = "salutation" style="color:black">
                <option value = "Mr.">Mr.</option>
                <option value = "Ms.">Ms.</option>
@@ -83,15 +81,15 @@ First Name:
                <option value = "Dr.">Dr.</option>
              </select>
 <input type="text" id="fname" name="fname" required style="color:black"><br><br>
-Last Name:<span style="width:105px"></span>
+<h3>Last Name:<h3>
 <input type="text" id="lname" name="lname" required style="color:black"><br><br>
-Date of Birth:<span style="width:90px"></span>
+<h3>Date of Birth:</h3>
 <input type="date" id="dob" name="dob" required style="color:black"><br><br>
-E-mail:<span style="width:140px"></span>
+<h3>E-mail:</h3>
 <input type="email" id="email" name="email" placeholder="abc@gmail.com" required style="color:black"><br><br>
-Phone Number:<span style="width:60px"></span>
+<h3>Phone Number:</h3>
 <input type="tel" id="tel" name="tel" pattern="[0-9]{10}" placeholder="Should contain 10 digits" required style="color:black"><br><br>
-Country:<span style="width:130px"></span>
+<h3>Country:</h3>
 <input list="countries" name="country" id="country" required style="color:black">
 <datalist id="countries">
   <option value="Albania">
@@ -101,11 +99,11 @@ Country:<span style="width:130px"></span>
   <option value="South Korea">
   <option value="United States of America">
 </datalist><br><br>
-City:<span style="width:160px"></span>
+<h3>City:</h3>
 <input type="text" id="cname" name="cname" required style="color:black"><br><br>
-Address:<span style="width:130px"></span>
+<h3>Address:</h3>
 <textarea rows="4" cols="50" required style="color:black"></textarea><br><br>
-Do you have or had any of the following?<br><br>
+<h3>Do you have or had any of the following?</h3><br><br>
 <input type="checkbox" name="disease" id="heart disease" style="color:black">
 Heart disease<br>
 <input type="checkbox" name="disease" id="eye disease" style="color:black">
@@ -116,7 +114,7 @@ Dermatologic<br>
 GastroIntestinal<br>
 <input type="checkbox" name="disease" id="gyenecological" style="color:black">
 Gyenecological<br><br>
-Allergies if any:<span style="width:70px"></span>
+<h3>Allergies if any:</h3>
 <input list="allergy" name="allergies" id="allergies" style="color:black">
 <datalist id="allergy">
   <option value="Skin">
@@ -129,9 +127,9 @@ Allergies if any:<span style="width:70px"></span>
 <div class="head">
 <h2><center>Login Information</center></h2>
 </div>
-Username:<span style="width:120px"></span>
+<h3>Username:</h3>
 <input type="text" id="uname" name="uname" required style="color:black"><br><br>
-Password:<span style="width:125px"></span>
+<h3>Password:</h3>
 <input type="password" id="pwd" name="pwd" required style="color:black"><br><br>
 <center><input type="submit" value="Submit" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/></center>
 </h3>
