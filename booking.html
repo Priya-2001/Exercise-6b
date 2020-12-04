@@ -72,10 +72,10 @@ a:active {
 <div class="row">
 <div class="col-md-12">
 <h1><center>Please enter the following details to book</center></h1><br>
-<form action="res3.html" method="get">
+<form action="res3.html" method="post">
 <fieldset>
 <h3>
-Choose a hotel:<span style="width:110px"></span>
+Choose a hotel:</h3>
 <input list="hotels" name="hotel" id="hotel" required style="color:black">
 <datalist id="hotels">
   <option value="The Prestige hotel,Penang">
@@ -83,28 +83,34 @@ Choose a hotel:<span style="width:110px"></span>
   <option value="Ambong-Ambong,Kedah">
   <option value="Terrapurri,Terrengganu">
 </datalist><br><br>
-Date and time from:<span style="width:60px"></span>
-<input type="datetime-local" id="date" name="date" style="color:black"><br><br>
-Date and time to:<span style="width:80px"></span>
-<input type="datetime-local" id="date" name="date" style="color:black"><br><br>
-No.of people:<span style="width:120px"></span>
+<h3>Date and time from:</h3>
+<input type="datetime-local" id="date1" name="date1" style="color:black"><br><br>
+<h3>Date and time to:</h3>
+<input type="datetime-local" id="date2" name="date2" style="color:black"><br><br>
+<h3>No.of people:</h3>
 <input type="number" id="people" name="people" style="color:black"><br><br>
-No.of rooms required:<span style="width:40px" ></span>
-<input type="range" id="room" name="room" min="0" max="100"><br><br>
-Room type:<span style="width:130px"></span>
+<div class="col-sm-3">
+<h3>No.of rooms required:</h3>
+<input type="range" id="room" name="room" min="0" max="10">
+</div>
+<div class="container">
+<div class="row">
+<div class="col-md-12">
+<br><br>
+<h3>Room type:</h3>
 <input type="radio" id="Single" name="room" value = "Single" style="color:black">Single&ensp;&ensp;
 <input type="radio" id="Double" name="room" value = "Double" style="color:black">Double&ensp;&ensp;
 <input type="radio" id="Triple" name="room" value = "Triple" style="color:black">Triple&ensp;&ensp;
-<input type="radio" id="King" name="room" value = "King" style="color:black">King<br><span style="width:220px"></span>
+<input type="radio" id="King" name="room" value = "King" style="color:black">King<br>
 <input type="radio" id="Queen" name="room" value = "Queen" style="color:black">Queen&ensp;&ensp;
 <input type="radio" id="Studio" name="room" value = "Studio" style="color:black">Studio&ensp;&ensp;
 <input type="radio" id="Master Suite" name="room" value = "Master Suite" style="color:black">Master Suite&ensp;&ensp;
 <input type="radio" id="Mini-Suite" name="room" value = "Mini-Suite" style="color:black">Mini-Suite<br><br>
-Theme of room:<span style="width:100px"></span>
+<h3>Theme of room:</h3>
 <input type="color" id="color" name="color" value="#ff0000"><br><br>
-Attach address proof:<span style="width:50px"></span>
+<h3>Attach address proof:</h3>
 <input type="file" id="myfile" name="myfile"><br><br>
-<center>Want to know the average price of rooms?<a href="avgprice.html" style="color:pink">Click here</a></center>
+<center><h3>Want to know the average price of rooms?</h3><a href="avgprice.html" style="color:pink">Click here</a></center>
 </h3>
 <center><input type="submit" value="Submit" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/></center>
 </fieldset>
@@ -114,6 +120,7 @@ Attach address proof:<span style="width:50px"></span>
 </div>
 <br>
 <div class="footer">
+<hr>
 <h4><center><b>&copy;Developed by M.V.Priyadharsini-18ITR077</b></center></h4><hr>
 </div>
 </body>
