@@ -65,7 +65,7 @@ a:active {
 </nav>
 <p><a href="login.html" style="color:pink">Back</a></p>
 <h1><center>Please enter the following details to signup</center></h1><br>
-<form method="post" action="res.html">
+<form method="get" action="http://localhost:8000/signup">
 <fieldset>
 <div class="head">
 <h2><center>Personal Information</center></h2>
@@ -131,7 +131,7 @@ Gyenecological<br><br>
 <input type="text" id="uname" name="uname" required style="color:black"><br><br>
 <h3>Password:</h3>
 <input type="password" id="pwd" name="pwd" required style="color:black"><br><br>
-<center><input type="submit" value="Submit" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/></center>
+<center><input type="submit" value="Submit" name = "signup" style="color:black"/>&ensp;&ensp;<input type="reset" value="Reset" style="color:black"/></center>
 </h3>
 </fieldset>
 </form>
